@@ -1,0 +1,9 @@
+*.o
+*.out
+*.exe
+*.bin
+a.out
+*.swp
+*.swo
+*~
+*.log
