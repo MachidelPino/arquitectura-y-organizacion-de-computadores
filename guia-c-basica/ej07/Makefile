@@ -7,7 +7,7 @@ all: $(TARGET)
 $(TARGET): operaciones.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-hola.o: operaciones.c
+operaciones.o: operaciones.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = secret
+TARGET = 3eq
 
 all: $(TARGET)
 
-$(TARGET): secret.o
+$(TARGET): 3eq.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-secret.o: secret.c
+3eq.o: 3eq.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

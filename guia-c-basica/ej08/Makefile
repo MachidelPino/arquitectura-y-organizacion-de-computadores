@@ -7,7 +7,7 @@ all: $(TARGET)
 $(TARGET): dif.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-hola.o: dif.c
+dif.o: dif.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

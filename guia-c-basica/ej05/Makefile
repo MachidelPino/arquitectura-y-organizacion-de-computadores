@@ -7,7 +7,7 @@ all: $(TARGET)
 $(TARGET): cast.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-hola.o: cast.c
+cast.o: cast.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

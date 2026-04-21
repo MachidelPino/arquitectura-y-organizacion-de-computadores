@@ -7,7 +7,7 @@ all: $(TARGET)
 $(TARGET): fijos.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-hola.o: fijos.c
+fijos.o: fijos.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

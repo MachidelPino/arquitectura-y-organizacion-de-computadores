@@ -7,7 +7,7 @@ all: $(TARGET)
 $(TARGET): sizeof.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-hola.o: sizeof.c
+sizeof.o: sizeof.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

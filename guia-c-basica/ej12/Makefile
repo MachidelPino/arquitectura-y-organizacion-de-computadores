@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = secret
+TARGET = rotationN
 
 all: $(TARGET)
 
-$(TARGET): secret.o
+$(TARGET): rotationN.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-secret.o: secret.c
+rotationN.o: rotationN.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = secret
+TARGET = scopes
 
 all: $(TARGET)
 
-$(TARGET): secret.o
+$(TARGET): scopes.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-secret.o: secret.c
+scopes.o: scopes.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:

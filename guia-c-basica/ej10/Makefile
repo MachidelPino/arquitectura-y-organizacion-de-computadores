@@ -1,13 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
-TARGET = secret
+TARGET = whiletofor
 
 all: $(TARGET)
 
-$(TARGET): secret.o
+$(TARGET): whiletofor.o
 		$(CC) $(CFLAGS) $^ -o $@
 
-secret.o: secret.c
+whiletofor.o: whiletofor.c
 		$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:
