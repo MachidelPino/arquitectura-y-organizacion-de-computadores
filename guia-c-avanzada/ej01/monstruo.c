@@ -1,7 +1,7 @@
 #define NAME_LEN 50
 #include <stdio.h>
 
-struct monstruo {
+struct monstruo_t {
     char nombre[NAME_LEN + 1];
     int vida;
     double ataque;
@@ -9,7 +9,7 @@ struct monstruo {
 };
 
 int main() {
-    struct monstruo monstruos[3] = {
+    struct monstruo_t monstruos[3] = {
         [0] = {"mon1", 500, 5000, 5000},
         [1] = {"mon2", 1500, 15000, 15000},
         [2] = {"mon3", 4500, 45000, 45000}
